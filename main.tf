@@ -6,7 +6,7 @@ terraform {
     key       = "tfstatefilecontainer.tfstate"
  }
 }
-
+data "azurerm_client_config" "current" {}
 provider "azurerm" {
   version = "=2.0.0"
   features {}
