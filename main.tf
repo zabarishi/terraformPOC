@@ -1,3 +1,12 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "Terraform-RG"
+    storage_account_name = "terraformstatedemopoc"
+    container_name       = "tfstatefilecontainer"
+    key       = "tfstatefilecontainer.tfstate"
+ }
+}
+
 provider "azurerm" {
   version = "=2.0.0"
   features {}
