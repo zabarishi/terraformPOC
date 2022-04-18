@@ -12,6 +12,6 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_resource_gorup" "terraform-demo" {
- name = "terraform-demo"
+ name = "terraform-demo01"
  location = "West Europe"
  }
